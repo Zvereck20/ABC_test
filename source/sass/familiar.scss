@@ -1,0 +1,20 @@
+.familiar {
+  &__wrap {
+    padding-top: 44px;
+    padding-bottom: 37px;
+  }
+
+  .block-heading {
+    font-size: 19px;
+    line-height: 25px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 22px;
+    }
+  }
+}

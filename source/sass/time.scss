@@ -1,0 +1,91 @@
+.time {
+  padding-top: 54px;
+  padding-left: 11px;
+  padding-bottom: 82px;
+  position: relative;
+  overflow: hidden;
+
+  background-image: url("../img/rain_bk2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: $text-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    background-image: url("../img/lightning_2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 87px;
+    right: -21px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    background-image: url("../img/lightning.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    bottom: 63px;
+    left: -19px;
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: "Merriweather", "Arial", serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: $main-color;
+
+    span {
+      font-weight: 900;
+      color: $excretion-color;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 21px;
+      line-height: 27px;
+    }
+  }
+
+  &__wrap {
+    width: 94%;
+    margin-top: 21px;
+    margin-bottom: 34px;
+    padding-top: 29px;
+    padding-left: 12px;
+    padding-bottom: 26px;
+    background-color: $block-color;
+    border-radius: 20px;
+    font-family: "Merriweather", "Arial", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: $header-background;
+
+    p {
+      margin: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 22px;
+      line-height: 27px;
+    }
+  }
+}

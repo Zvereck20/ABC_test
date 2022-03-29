@@ -1,0 +1,72 @@
+.definition {
+  &__wrap {
+    padding-top: 21px;
+    padding-bottom: 17px;
+  }
+
+  .block-heading {
+    font-size: 16px;
+    line-height: 21px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 22px;
+    }
+  }
+
+  &__img {
+    margin-right: -17px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 173px;
+      height: 115px;
+    }
+
+    @media (min-width: $tablet-width) {
+      img {
+        width: 190px;
+        height: 126px;
+      }
+    }
+
+    @media (min-width: $descktop-width) {
+      img {
+        width: 209px;
+        height: 138px;
+      }
+    }
+  }
+
+  .form-answer {
+    li:last-of-type {
+      font-size: 16px;
+      line-height: 17px;
+
+      label {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 86px;
+      }
+
+      @media (min-width: $tablet-width) {
+        font-size: 19px;
+        line-height: 20px;
+      }
+
+      @media (min-width: $descktop-width) {
+        font-size: 22px;
+      }
+    }
+
+    label {
+      padding-left: 83px;
+    }
+  }
+}

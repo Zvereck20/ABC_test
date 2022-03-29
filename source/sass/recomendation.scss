@@ -1,0 +1,116 @@
+.recomendation {
+  padding-bottom: 40px;
+  background-color: $main-color;
+
+  &__wrap {
+    padding-top: 85px;
+    padding-bottom: 47px;
+    background-image: url("../img/block-bc2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+
+    &::before {
+      top: 43px;
+      left: 24px;
+    }
+
+    &::after {
+      bottom: 32px;
+      right: 29px;
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__heading {
+    margin: 0;
+    font-family: "Yeseva One", "Arial", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $main-color;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      line-height: 26px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  &__text {
+    padding-left: 11px;
+    padding-top: 22px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $text-color;
+
+    b {
+      text-transform: uppercase;
+    }
+
+    span {
+      text-transform: lowercase;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 19px;
+      line-height: 27px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 21px;
+      line-height: 30px;
+    }
+  }
+
+  &__img {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 232px;
+      height: 180px;
+    }
+
+    @media (min-width: $tablet-width) {
+      img {
+        width: 255px;
+        height: 198px;
+      }
+    }
+
+    @media (min-width: $descktop-width) {
+      img {
+        width: 280px;
+        height: 218px;
+      }
+    }
+  }
+
+  &__button {
+    margin-top: -12px;
+  }
+
+}

@@ -1,0 +1,31 @@
+.number {
+  &__wrap {
+    padding-top: 37px;
+    padding-bottom: 16px;
+  }
+
+  &__img {
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 228px;
+      height: 207px;
+    }
+
+    @media (min-width: $tablet-width) {
+      img {
+        width: 251px;
+        height: 228px;
+      }
+    }
+
+    @media (min-width: $descktop-width) {
+      img {
+        width: 276px;
+        height: 251px;
+      }
+    }
+  }
+}

@@ -1,0 +1,256 @@
+.form-answer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    align-items: center;
+    position: relative;
+  }
+
+  label {
+    display: block;
+    width: auto;
+    background-color: fade-out($type-color, 0.85);
+    padding-left: 94px;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 8px;
+
+    &:hover {
+      background-color: $excretion-color;
+      color: $text-color;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input+label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $main-color;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 36px;
+    top: 15px;
+  }
+
+  input:checked+label {
+    background-color: $excretion-color;
+    color: $text-color;
+
+    &::before {
+      background-color: $checked-color;
+      border: 1px solid $text-color;
+    }
+  }
+
+  .button {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+
+  &--small {
+    label {
+      padding: 10px 0;
+      padding-left: 86px;
+      margin-bottom: 9px;
+    }
+
+    input+label::before {
+      left: 35px;
+      top: 10px;
+    }
+  }
+
+  &--big {
+    li {
+      height: 78px;
+      margin-bottom: 19px;
+    }
+
+    label {
+      height: 100%;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      padding-left: 70px;
+
+    }
+
+    input+label::before {
+      left: 35px;
+      top: 30px;
+    }
+  }
+}
+
+.form-colours {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 21px;
+    row-gap: 24px;
+    justify-content: center;
+  }
+
+  li {
+    width: 75px;
+    height: 75px;
+    list-style: none;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 82px;
+      height: 82px;
+    }
+
+    @media (min-width: $descktop-width) {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  label {
+    display: block;
+    width: auto;
+    height: 100%;
+
+    &[for='grey'] {
+      background-color: #A8A8A8;
+    }
+
+    &[for='blue'] {
+      background-color: #0000A9;
+    }
+
+    &[for='green'] {
+      background-color: #00A701;
+    }
+
+    &[for='red'] {
+      background-color: #F60100;
+    }
+
+    &[for='yellow'] {
+      background-color: #FDFF19;
+    }
+
+    &[for='brown'] {
+      background-color: #A95403;
+    }
+
+    &[for='black'] {
+      background-color: #000000;
+    }
+
+    &[for='purple'] {
+      background-color: #850068;
+    }
+
+    &[for='turquoise'] {
+      background-color: #46B3AC;
+    }
+
+    &:hover {
+      outline: 6px solid $excretion-color;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked+label {
+    outline: 6px solid $excretion-color;
+  }
+
+  .button {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+}
+
+.form-numbers {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 29px;
+  }
+
+  li {
+    width: 41px;
+    height: 41px;
+    list-style: none;
+
+    @media (min-width: $tablet-width) {
+      width: 45px;
+      height: 45px;
+    }
+
+    @media (min-width: $descktop-width) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $btn-active-color;
+    background-color: $main-color;
+
+    &:hover {
+      outline: 6px solid $excretion-color;
+    }
+  }
+
+  input {
+    display: none;
+  }
+
+  input:checked+label {
+    outline: 6px solid $excretion-color;
+  }
+
+  .button {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
+
+  &--big {
+    ul {
+      padding-top: 22px;
+      border-top: 4px solid fade-out($type-color, 0.85);
+      column-gap: 8px;
+    }
+  }
+}

@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" href="fonts/Merriweather-Black.woff2" as="font">
+  <link rel="preload" href="fonts/Merriweather-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Merriweather-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/PTSerif-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Roboto-Light.woff2" as="font">
+  <link rel="preload" href="fonts/YesevaOne-Regular.woff2" as="font">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+  <header class="header">
+
+    <button class="header__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+
+    <a class="header__logo visually-hidden" href="#">
+      <picture>
+        <source type="image/webp" srcset="img/rain_bk3.webp 1x, img/rain_bk3@2x.webp 2x">
+        <img src="img/rain_bk3.png" alt="Логотип" width="304" height="297" srcset="img/rain_bk3@2x.png 2x">
+      </picture>
+      <span>тест на определение IQ</span>
+    </a>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Информация о тесте</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--excretion">пройти тест</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+    <div class="container">
+
+      <section class="coming">
+        <h1 class="coming__heading">
+          Пройдите точный и быстрый
+          <span>тест на<br /> определение<br /> IQ</span>
+        </h1>
+        <div class="coming__img">
+          <picture>
+            <source type="image/webp" srcset="img/rain_bk3.webp 1x, img/rain_bk3@2x.webp 2x">
+            <img src="img/rain_bk3.png" alt="Изображение мозга" width="304" height="297"
+              srcset="img/rain_bk3@2x.png 2x">
+          </picture>
+        </div>
+        <button class="button button--excretion button-test" type="button">пройти тест</button>
+        <p class="coming__text">
+          И получите рекомендации<br />
+          по развитию своего интеллекта<br />
+          <span>и улучшению финансового благосостояния и личной жизни</span>
+        </p>
+        <a href="#" class="coming__link">
+          Подробнее
+        </a>
+      </section>
+
+      <section class="recomendation">
+        <div class="recomendation__wrap">
+          <h2 class="recomendation__heading">Профессиональный<br /> IQ-тест позволяет не<br /> только определить<br />
+            коэффициент вашего<br />
+            интеллекта,<br /> но и выработать список рекомендаций для<br /> повышения этого<br /> показателя.
+          </h2>
+        </div>
+        <p class="recomendation__text">Также по результатам теста<br />
+          <b>вы получите</b> подробные<br /> <b>советы</b> по определению наиболее перспективной
+          <b>для вашего<br /> типа <span>интеллекта</span> сферы деятельности,</b><br />
+          которая принесет вам скорейший финансовый результат.
+        </p>
+        <div class="recomendation__img">
+          <picture>
+            <source type="image/webp" srcset="img/brain.webp 1x, img/brain@2x.webp 2x">
+            <img src="img/brain.png" alt="Изображение ответственных частей мозга" width="232" height="180"
+              srcset="img/brain@2x.png 2x">
+          </picture>
+        </div>
+        <button class="recomendation__button button button--excretion button--big button-test" type="button">пройти
+          тест</button>
+
+      </section>
+
+      <section class="time">
+        <h2 class="time__heading">
+          Прохождение теста займет у<br /> вас не более
+          <span>12 минут</span>, а его <b>результаты</b> вы сможете <span>использовать всю жизнь.</span>
+        </h2>
+        <div class="time__wrap">
+          <p>Профессиональная интерпретация и детально
+            <b>проработанные рекомендации</b> позволят вам качественно <b>изменить все аспекты своей жизни:</b> от
+            финансового до любовного.
+          </p>
+        </div>
+        <button class="button button--white button--big button-test" type="button">пройти тест</button>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">
+      <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M4.71836 6.46168C4.95365 6.46168 5.15924 6.39037 5.33512 6.24777C5.51099 6.10517 5.60844 5.92692 5.62745 5.71301H6.25134C6.23945 5.93405 6.1634 6.14439 6.02317 6.34403C5.88295 6.54367 5.69519 6.70291 5.45989 6.82175C5.22698 6.94058 4.9798 7 4.71836 7C4.19311 7 3.77481 6.82531 3.46346 6.47594C3.15449 6.12418 3 5.64409 3 5.03565V4.92513C3 4.54961 3.06892 4.21569 3.20677 3.92335C3.34462 3.63102 3.54189 3.40404 3.79857 3.24242C4.05764 3.08081 4.36304 3 4.71479 3C5.14736 3 5.50624 3.12953 5.79144 3.38859C6.07903 3.64765 6.23232 3.98396 6.25134 4.3975H5.62745C5.60844 4.14795 5.51337 3.94355 5.34225 3.78431C5.1735 3.6227 4.96435 3.54189 4.71479 3.54189C4.37968 3.54189 4.11943 3.6631 3.93405 3.90553C3.75104 4.14557 3.65954 4.49376 3.65954 4.95009V5.07487C3.65954 5.51931 3.75104 5.86156 3.93405 6.1016C4.11705 6.34165 4.37849 6.46168 4.71836 6.46168Z"
+          fill="white" />
+        <circle cx="5" cy="5" r="4.4" stroke="white" stroke-width="0.8" />
+      </svg>
+      <span>2019</span>
+    </p>
+  </footer>
+
+  <template id="gender">
+    <div class="gender container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress"></div>
+      </div>
+
+      <div class="gender__wrap">
+        <h2 class="block-heading">
+          Ваш пол:
+        </h2>
+      </div>
+
+      <form class="form-answer" action="#" method="get" id="gender-form">
+        <ul>
+          <li>
+            <input type="radio" id="male" name="gender-type" value="male">
+            <label for="male">Мужчина</label>
+          </li>
+          <li>
+            <input type="radio" id="female" name="gender-type" value="female">
+            <label for="female">Женщина</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="age">
+    <div class="age container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--age"></div>
+      </div>
+
+      <div class="age__wrap">
+        <h2 class="block-heading">
+          Укажите ваш возраст:
+        </h2>
+      </div>
+
+      <form class="form-answer" action="#" method="get" id="age-form">
+        <ul>
+          <li>
+            <input type="radio" id="before-18" name="age-type" value="before-18">
+            <label for="before-18">До 18</label>
+          </li>
+          <li>
+            <input type="radio" id="18-to-28" name="age-type" value="18-to-28">
+            <label for="18-to-28">От 18 до 28</label>
+          </li>
+          <li>
+            <input type="radio" id="19-to-35" name="age-type" value="19-to-35">
+            <label for="19-to-35">От 29 до 35</label>
+          </li>
+          <li>
+            <input type="radio" id="from-36" name="age-type" value="from-36">
+            <label for="from-36">От 36</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="dwelling">
+    <div class="dwelling container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--dwelling"></div>
+      </div>
+
+      <div class="dwelling__wrap">
+        <h2 class="block-heading">
+          Выберите лишнее:
+        </h2>
+      </div>
+
+      <form class="form-answer" action="#" method="get" id="dwelling-form">
+        <ul>
+          <li>
+            <input type="radio" id="house" name="dwelling-type" value="house">
+            <label for="house">Дом</label>
+          </li>
+          <li>
+            <input type="radio" id="hovel" name="dwelling-type" value="hovel">
+            <label for="hovel">Шалаш</label>
+          </li>
+          <li>
+            <input type="radio" id="bungalo" name="dwelling-type" value="bungalo">
+            <label for="bungalo">Бунгало</label>
+          </li>
+          <li>
+            <input type="radio" id="bench" name="dwelling-type" value="bench">
+            <label for="bench">Скамейка</label>
+          </li>
+          <li>
+            <input type="radio" id="hut" name="dwelling-type" value="hut">
+            <label for="hut">Хижина</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="continue-number">
+    <div class="continue-number container container--background">
+      <div class="progress-bar ">
+        <div class="progress-bar__progress progress-bar__progress--continue-number"></div>
+      </div>
+
+      <div class="continue-number__wrap">
+        <h2 class="block-heading">
+          Продолжите числовой ряд:
+        </h2>
+        <p class="block-heading">
+          18 20 24 32
+        </p>
+      </div>
+
+      <form class="form-answer form-answer--small" action="#" method="get" id="continue-number-form">
+        <ul>
+          <li>
+            <input type="radio" id="62" name="continue-number-type" value="62">
+            <label for="62">62</label>
+          </li>
+          <li>
+            <input type="radio" id="48" name="continue-number-type" value="48">
+            <label for="48">48</label>
+          </li>
+          <li>
+            <input type="radio" id="74" name="continue-number-type" value="74">
+            <label for="74">74</label>
+          </li>
+          <li>
+            <input type="radio" id="57" name="continue-number-type" value="57">
+            <label for="57">57</label>
+          </li>
+          <li>
+            <input type="radio" id="60" name="continue-number-type" value="60">
+            <label for="60">60</label>
+          </li>
+          <li>
+            <input type="radio" id="77" name="continue-number-type" value="77">
+            <label for="77">77</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="colour-first">
+    <div class="colour-first container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--colour-first"></div>
+      </div>
+
+      <div class="colour-first__wrap">
+        <h2 class="block-heading">
+          Выберите цвет, который<br /> сейчас наиболее вам<br /> приятен:
+        </h2>
+      </div>
+
+      <form class="form-colours" action="#" method="get" id="colour-first-form">
+        <ul>
+          <li>
+            <input type="radio" id="grey" name="colour-first-type" value="grey">
+            <label for="grey">
+              <span class="visually-hidden">grey</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="blue" name="colour-first-type" value="blue">
+            <label for="blue">
+              <span class="visually-hidden">blue</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="green" name="colour-first-type" value="green">
+            <label for="green">
+              <span class="visually-hidden">green</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="red" name="colour-first-type" value="red">
+            <label for="red">
+              <span class="visually-hidden">red</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="yellow" name="age-type" value="yellow">
+            <label for="yellow">
+              <span class="visually-hidden">yellow</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="brown" name="age-type" value="brown">
+            <label for="brown">
+              <span class="visually-hidden">brown</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="black" name="age-type" value="black">
+            <label for="black">
+              <span class="visually-hidden">black</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="purple" name="age-type" value="purple">
+            <label for="purple">
+              <span class="visually-hidden">purple</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="turquoise" name="age-type" value="turquoise">
+            <label for="turquoise">
+              <span class="visually-hidden">turquoise</span>
+            </label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="colour-second">
+    <div class="colour-second container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--colour-second"></div>
+      </div>
+
+      <div class="colour-second__wrap">
+        <h2 class="block-heading">
+          Отдохните пару секунд, еще<br /> раз выберите цвет, который<br /> сейчас наиболее вам<br /> приятен:
+        </h2>
+      </div>
+
+      <form class="form-colours" action="#" method="get" id="colour-second-form">
+        <ul>
+          <li>
+            <input type="radio" id="grey" name="colour-second-type" value="grey">
+            <label for="grey">
+              <span class="visually-hidden">grey</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="turquoise" name="colour-second-type" value="turquoise">
+            <label for="turquoise">
+              <span class="visually-hidden">turquoise</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="brown" name="colour-second-type" value="brown">
+            <label for="brown">
+              <span class="visually-hidden">brown</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="green" name="colour-second-type" value="green">
+            <label for="green">
+              <span class="visually-hidden">green</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="black" name="colour-second-type" value="black">
+            <label for="black">
+              <span class="visually-hidden">black</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="red" name="age-type" value="red">
+            <label for="red">
+              <span class="visually-hidden">red</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="purple" name="age-type" value="purple">
+            <label for="purple">
+              <span class="visually-hidden">purple</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="yellow" name="age-type" value="yellow">
+            <label for="yellow">
+              <span class="visually-hidden">yellow</span>
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="blue" name="age-type" value="blue">
+            <label for="blue">
+              <span class="visually-hidden">blue</span>
+            </label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="cities">
+    <div class="cities container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--cities"></div>
+      </div>
+
+      <div class="cities__wrap">
+        <h2 class="block-heading">
+          Какой из городов<br /> лишний?
+        </h2>
+      </div>
+
+      <form class="form-answer form-answer--small" action="#" method="get" id="cities-form">
+        <ul>
+          <li>
+            <input type="radio" id="Vashington" name="cities-type" value="Vashington">
+            <label for="Vashington">Вашингтон</label>
+          </li>
+          <li>
+            <input type="radio" id="London" name="cities-type" value="London">
+            <label for="London">Лондон</label>
+          </li>
+          <li>
+            <input type="radio" id="Paris" name="cities-type" value="Paris">
+            <label for="Paris">Париж</label>
+          </li>
+          <li>
+            <input type="radio" id="New-York" name="cities-type" value="New-York">
+            <label for="New-York">Нью-Йорк</label>
+          </li>
+          <li>
+            <input type="radio" id="Moscow" name="cities-type" value="Moscow">
+            <label for="Moscow">Москва</label>
+          </li>
+          <li>
+            <input type="radio" id="Ottava" name="cities-type" value="Ottava">
+            <label for="Ottava">Оттава</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="figure">
+    <div class="figure container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--figure"></div>
+      </div>
+
+      <div class="figure__wrap">
+        <h2 class="block-heading">
+          Выберите правильную фигуру<br /> из четырёх пронумерованных.
+        </h2>
+      </div>
+
+      <div class="figure__img">
+        <picture>
+          <source type="image/webp" srcset="img/little-man.webp 1x, img/little-man@2x.webp 2x">
+          <img src="img/little-man.png" alt="Изображение фигур человечков" width="185" height="235"
+            srcset="img/little-man@2x.png 2x">
+        </picture>
+      </div>
+
+      <form class="form-numbers" action="#" method="get" id="figure-form">
+        <ul>
+          <li>
+            <input type="radio" id="1" name="figure-type" value="1">
+            <label for="1">1</label>
+          </li>
+          <li>
+            <input type="radio" id="2" name="figure-type" value="2">
+            <label for="2">2</label>
+          </li>
+          <li>
+            <input type="radio" id="3" name="figure-type" value="3">
+            <label for="3">3</label>
+          </li>
+          <li>
+            <input type="radio" id="4" name="figure-type" value="4">
+            <label for="4">4</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="familiar">
+    <div class="familiar container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--familiar"></div>
+      </div>
+
+      <div class="familiar__wrap">
+        <h2 class="block-heading">
+          Вам привычнее и важнее:
+        </h2>
+      </div>
+
+      <form class="form-answer form-answer--big" action="#" method="get" id="familiar-form">
+        <ul>
+          <li>
+            <input type="radio" id="Enjoy" name="familiar-type" value="Enjoy">
+            <label for="Enjoy">
+              Наслаждаться<br /> каждой минутой
+              проведенного времени
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="Aspiring" name="familiar-type" value="Aspiring">
+            <label for="Aspiring">
+              Быть устремленными
+              мыслями в будущее
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="consider" name="familiar-type" value="consider">
+            <label for="consider">
+              Учитывать в ежедневной
+              практике прошлый опыт
+            </label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="definition">
+    <div class="definition container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--definition"></div>
+      </div>
+
+      <div class="definition__wrap">
+        <h2 class="block-heading">
+          Какое определение, по-Вашему, больше подходит к этому геометрическому изображению:
+        </h2>
+      </div>
+
+      <div class="definition__img">
+        <picture>
+          <source type="image/webp" srcset="img/geometry-image.webp 1x, img/geometry-image@2x.webp 2x">
+          <img src="img/geometry-image.png" alt="Изображение геометрической фигуры" width="173" height="115"
+            srcset="img/geometry-image@2x.png 2x">
+        </picture>
+      </div>
+
+      <form class="form-answer" action="#" method="get" id="definition-form">
+        <ul>
+          <li>
+            <input type="radio" id="pointed" name="definition-type" value="pointed">
+            <label for="pointed">Оно остроконечное</label>
+          </li>
+          <li>
+            <input type="radio" id="steady" name="definition-type" value="steady">
+            <label for="steady">Оно устойчиво</label>
+          </li>
+          <li>
+            <input type="radio" id="equilibrium" name="definition-type" value="equilibrium">
+            <label for="equilibrium">Оно-находится в<br /> состоянии равновесия</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="number">
+    <div class="number container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--number"></div>
+      </div>
+
+      <div class="number__wrap">
+        <h2 class="block-heading">
+          Вставьте подходящее<br /> число
+        </h2>
+      </div>
+
+      <div class="number__img">
+        <picture>
+          <source type="image/webp" srcset="img/star-number.webp 1x, img/star-number@2x.webp 2x">
+          <img src="img/star-number.png" alt="Изображение звезды с числами" width="228" height="207"
+            srcset="img/star-number@2x.png 2x">
+        </picture>
+      </div>
+
+      <form class="form-numbers form-numbers--big" action="#" method="get" id="number-form">
+        <ul>
+          <li>
+            <input type="radio" id="34" name="number-type" value="34">
+            <label for="34">34</label>
+          </li>
+          <li>
+            <input type="radio" id="36" name="number-type" value="36">
+            <label for="36">36</label>
+          </li>
+          <li>
+            <input type="radio" id="53" name="number-type" value="53">
+            <label for="53">53</label>
+          </li>
+          <li>
+            <input type="radio" id="44" name="number-type" value="44">
+            <label for="44">44</label>
+          </li>
+          <li>
+            <input type="radio" id="66" name="number-type" value="66">
+            <label for="66">66</label>
+          </li>
+          <li>
+            <input type="radio" id="42" name="number-type" value="42">
+            <label for="42">42</label>
+          </li>
+        </ul>
+        <butoon class="button" type="submit">далее</butoon>
+      </form>
+    </div>
+  </template>
+
+  <template id="processing">
+    <div class="processing container container--background">
+      <div class="progress-bar">
+        <div class="progress-bar__progress progress-bar__progress--processing"></div>
+      </div>
+
+      <div class="processing__wrap">
+        <h2 class="block-heading">
+          Обработка<br /> результатов
+        </h2>
+      </div>
+
+      <div class="processing__animation">
+        <div id="circularG">
+          <div id="circularG_1" class="circularG"></div>
+          <div id="circularG_2" class="circularG"></div>
+          <div id="circularG_3" class="circularG"></div>
+          <div id="circularG_4" class="circularG"></div>
+          <div id="circularG_5" class="circularG"></div>
+          <div id="circularG_6" class="circularG"></div>
+          <div id="circularG_7" class="circularG"></div>
+          <div id="circularG_8" class="circularG"></div>
+        </div>
+      </div>
+
+      <div class="processing__text">
+        <p>
+          Определение стиля мышления
+        </p>
+      </div>
+    </div>
+  </template>
+
+  <template id="result">
+    <div class="result container container--background container--design">
+
+      <div class="result__wrap">
+        <h2 class="block-heading">
+          Ваш результат рассчитан:
+        </h2>
+      </div>
+      <p class="result__text">
+        <u>Вы относитесь к 3%</u> респондентов, чей<br /> уровень интеллекта более чем на<br />
+        15 пунктов отличается от среднего в<br /> большую или меньшую сторону!
+      </p>
+      <h3 class="result__title">
+        Скорее получите свой результат!
+      </h3>
+      <div class="result__protect">
+        <p>
+          в целях защиты персональных<br /> данных
+          результат теста, их подробная интерпретация и рекомендации доступны в виде голосового сообщения по
+          звонку
+          с вашего мобильного телефона
+        </p>
+      </div>
+      <div class="result__timer">
+        <p>Звоните скорее, запись доступна всего</p>
+        <div class="result__timer-time">10:00</div>
+        <p>минут</p>
+      </div>
+      <button class="button button--call" type="button">
+        Позвонить и прослушать результат
+      </button>
+    </div>
+  </template>
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

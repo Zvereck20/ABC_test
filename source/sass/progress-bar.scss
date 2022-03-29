@@ -1,0 +1,58 @@
+.progress-bar {
+  margin: 0 auto;
+  width: 81%;
+  height: 11px;
+  border-radius: 10.5px;
+  background-color: fade-out($type-color, 0.5);
+}
+
+.progress-bar__progress {
+  width: 6%;
+  height: 100%;
+  border-radius: 10.5px;
+  background-color: $line-color;
+
+  &--age {
+    width: 10%;
+  }
+
+  &--dwelling {
+    width: 14%;
+  }
+
+  &--continue-number {
+    width: 29%;
+  }
+
+  &--colour-first {
+    width: 36%;
+  }
+
+  &--colour-second {
+    width: 40%;
+  }
+
+  &--cities {
+    width: 49%;
+  }
+
+  &--figure {
+    width: 55%;
+  }
+
+  &--familiar {
+    width: 57%;
+  }
+
+  &--definition {
+    width: 66%;
+  }
+
+  &--number {
+    width: 74%;
+  }
+
+  &--processing {
+    width: 100%;
+  }
+}

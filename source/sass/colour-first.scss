@@ -1,0 +1,20 @@
+.colour-first {
+  &__wrap {
+    padding-top: 28px;
+    padding-bottom: 30px;
+  }
+
+  .block-heading {
+    font-size: 19px;
+    line-height: 23px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    @media (min-width: $descktop-width) {
+      font-size: 25px;
+    }
+  }
+}
