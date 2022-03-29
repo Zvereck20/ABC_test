@@ -214,6 +214,7 @@
           processingLoud();
           setTimeout(() => {
             appendWindow(resultQuestionWindow);
+            clearInterval(timprocessingLouder);
           }, 10000);
         } else if (node.classList.contains('result')) {
           timer();
